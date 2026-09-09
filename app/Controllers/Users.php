@@ -7,11 +7,11 @@ class Users extends BaseController
     public function index(): string
     {
         static $users = [
-            ['username' => 'asantos', 'full_name' => 'Ana Santos', 'role' => 'Cashier'],
-            ['username' => 'bcruz', 'full_name' => 'Ben Cruz', 'role' => 'Inventory Clerk'],
-            ['username' => 'creyes', 'full_name' => 'Carla Reyes', 'role' => 'Cashier'],
-            ['username' => 'dlim', 'full_name' => 'Daniel Lim', 'role' => 'Manager'],
-            ['username' => 'egarcia', 'full_name' => 'Elena Garcia', 'role' => 'Administrator'],
+            ['username' => 'cvales', 'full_name' => 'Cedrick Vales', 'role' => 'Cashier'],
+            ['username' => 'jbondoc', 'full_name' => 'Joseph Bondoc', 'role' => 'Inventory Clerk'],
+            ['username' => 'pcaluag', 'full_name' => 'Philyip Caluag', 'role' => 'Cashier'],
+            ['username' => 'lmedina', 'full_name' => 'Lexus Medina', 'role' => 'Manager'],
+            ['username' => 'rodarbe', 'full_name' => 'Raining Odarbe', 'role' => 'Administrator'],
         ];
 
         return view('users/index', [
