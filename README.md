@@ -32,3 +32,7 @@ The activity intentionally uses static arrays instead of a database. The `databa
 ## Verification
 
 Run `php spark routes` to confirm all four routes. The customer and user templates each use `foreach` to render every record.
+
+## InfinityFree deployment
+
+Upload the project contents into the domain's `htdocs` folder. The root `.htaccess` forwards browser requests to CodeIgniter's `public` folder. Update `.env` with the production domain and ensure the `writable` folder remains writable.
