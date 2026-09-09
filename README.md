@@ -1,38 +1,23 @@
-# POS Lab — CodeIgniter 4 MVC Activity
+# TFA1 — CodeIgniter POS System
 
-This project is a four-page Point-of-Sale starter built for the routing, controller, and view laboratory activity.
+## Submission Links
 
-## Required pages
+- GitHub repository: [https://github.com/bonkval/TFA1](https://github.com/bonkval/TFA1)
+- Hosted application: [https://tfa1.page.gd/](https://tfa1.page.gd/)
+- Screenshots: See [`DOCUMENTATION.md`](DOCUMENTATION.md)
 
-- `/` — landing page
-- `/about` — activity overview
-- `/customers` — five customer records from a static PHP array
-- `/users` — five staff records from a static PHP array
+## Completed Requirements
 
-## Run locally
-
-1. Install PHP 8.2+ with the `intl` and `mbstring` extensions.
-2. Install Composer.
-3. Clone this repository and enter the project folder.
-4. Run `composer install`.
-5. Copy `env` to `.env` and set `app.baseURL = 'http://localhost:8080/'`.
-6. Start the development server with `php spark serve`.
-7. Open `http://localhost:8080/` in a browser.
-
-## MVC structure
-
-- `app/Config/Routes.php` maps URLs to controller methods.
-- `app/Controllers/Pages.php` renders the landing and about pages.
-- `app/Controllers/Customers.php` supplies the customer static array.
-- `app/Controllers/Users.php` supplies the user/staff static array.
-- `app/Views/` contains the shared layout and page templates.
-
-The activity intentionally uses static arrays instead of a database. The `database/README.md` records that decision for this module; a database export will be added in the next module when the data layer is introduced.
-
-## Verification
-
-Run `php spark routes` to confirm all four routes. The customer and user templates each use `foreach` to render every record.
-
-## InfinityFree deployment
-
-Upload the project contents into the domain's `htdocs` folder. The root `.htaccess` forwards browser requests to CodeIgniter's `public` folder. Update `.env` with the production domain and ensure the `writable` folder remains writable.
+- CodeIgniter 4 project installed through Composer.
+- Base URL configured in `.env`.
+- Default welcome route removed.
+- Landing page available at `/`.
+- About page available at `/about`.
+- `Pages` controller created for the landing and about pages.
+- `Customers` controller created with five static customer records.
+- `Users` controller created with five static user records.
+- Customer Accounts page available at `/customers` with full name, email, and phone.
+- User Accounts page available at `/users` with username, full name, and role.
+- Customer and user records displayed using `foreach` loops in the views.
+- Navigation links provided between all four pages.
+- No database used; static PHP arrays are required for this activity.
