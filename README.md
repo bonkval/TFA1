@@ -13,7 +13,7 @@ This project is a four-page Point-of-Sale starter built for the routing, control
 
 1. Install PHP 8.2+ with the `intl` and `mbstring` extensions.
 2. Install Composer.
-3. Clone this repository and enter the `pos-lab` folder.
+3. Clone this repository and enter the project folder.
 4. Run `composer install`.
 5. Copy `env` to `.env` and set `app.baseURL = 'http://localhost:8080/'`.
 6. Start the development server with `php spark serve`.
