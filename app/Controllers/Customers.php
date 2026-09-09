@@ -6,7 +6,7 @@ class Customers extends BaseController
 {
     public function index(): string
     {
-        $customers = [
+        static $customers = [
             ['full_name' => 'Ana Santos', 'email' => 'ana.santos@example.com', 'phone' => '0917-555-0101'],
             ['full_name' => 'Ben Cruz', 'email' => 'ben.cruz@example.com', 'phone' => '0917-555-0102'],
             ['full_name' => 'Carla Reyes', 'email' => 'carla.reyes@example.com', 'phone' => '0917-555-0103'],

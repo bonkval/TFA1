@@ -6,7 +6,7 @@ class Users extends BaseController
 {
     public function index(): string
     {
-        $users = [
+        static $users = [
             ['username' => 'asantos', 'full_name' => 'Ana Santos', 'role' => 'Cashier'],
             ['username' => 'bcruz', 'full_name' => 'Ben Cruz', 'role' => 'Inventory Clerk'],
             ['username' => 'creyes', 'full_name' => 'Carla Reyes', 'role' => 'Cashier'],
